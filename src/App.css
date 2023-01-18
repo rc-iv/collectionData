@@ -51,3 +51,8 @@
   left: 1%;
   color: teal;
 }
+
+.header button {
+  position: relative;
+  left: 15%;
+}
