@@ -26,7 +26,7 @@ const CollectionTable = (props) => {
     }, [fetchCollectionData])
 
     return (
-        <DataTable value={collectionData}>
+        <DataTable value={collectionData} sortField="volumeFifteenMinutes" sortOrder={-1}>
             {/*<Column field="imageUrl" header="Logo"></Column>*/}
             <Column field="name" sortable header="Name"></Column>
             <Column field="floorPrice" sortable header="Floor"></Column>

@@ -6,7 +6,7 @@ import CollectionTable from './components/CollectionTable/CollectionTable';
 function App() {
     return (
         <React.Fragment>
-            <H1>Collection Table</H1>
+            <h1>Collection Table</h1>
             <CollectionTable/>
         </React.Fragment>
     )
