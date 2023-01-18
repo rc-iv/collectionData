@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 50px;
+  left: 1%;
+  color: teal;
+}
