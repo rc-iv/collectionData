@@ -53,6 +53,5 @@
 }
 
 .header button {
-  position: relative;
-  left: 15%;
+  float: right;
 }
