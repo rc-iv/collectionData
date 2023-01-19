@@ -1,6 +1,7 @@
 import React from 'react';
 import {DataTable} from 'primereact/datatable';
 import {Column} from "primereact/column";
+import styles from './CollectionTable.module.css'
 
 
 const CollectionTable = (props) => {
