@@ -20,7 +20,7 @@ const CollectionTable = (props) => {
                    theme='md-dark-indigo'
                    resizableColumns
                    columnResizeMode="fit"
-                   style={{fontSize: '20px', fontWeight: 'bold'}}
+                   style={{fontSize: '12px', fontWeight: 'bold'}}
         >
             <Column field="imageUrl" header="Logo" body={imageBodyTemplate}></Column>
             <Column field="name" sortable header="Name" body={nameLinkTemplate}></Column>
