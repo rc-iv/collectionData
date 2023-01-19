@@ -11,11 +11,11 @@ const CollectionTable = (props) => {
             <Column field="name" sortable header="Name"></Column>
             <Column field="floorPrice" sortable header="Floor"></Column>
             <Column field="bestCollectionBid" sortable header="Bid"></Column>
-            <Column field="volumeFifteenMinutes" sortable header="15mV"></Column>
+            <Column field="volumeFifteenMinutes" sortable header="15mV" headerTooltip="15 Minute Volume"></Column>
             <Column field="numberOwners" sortable header="Owners"></Column>
             <Column field="totalSupply" sortable header="Supply"></Column>
-            <Column field="totalCollectionBidValue" sortable header="TBV"></Column>
-            <Column field="volumeOneDay" sortable header="1DV"></Column>
+            <Column field="totalCollectionBidValue" sortable header="TBV" headerTooltip="Total Bid Value"></Column>
+            <Column field="volumeOneDay" sortable header="1DV" headerTooltip="1 Day Volume"></Column>
         </DataTable>
     );
 }
