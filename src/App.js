@@ -42,7 +42,7 @@ function App() {
             <div className='header'>
                 <img src={f20logo} alt="logo" height='50' width='50'/>
                 <button onClick={fetchCollectionData}>Refresh Data</button>
-                <h1>floor20.io</h1>
+                <h1>floor20</h1>
             </div>
             {content}
         </React.Fragment>
