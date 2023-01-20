@@ -35,6 +35,8 @@ const CollectionTable = (props) => {
             {/*<Column field="bestCollectionBid" sortable header="Bid"></Column>*/}
             {/*<Column field="totalCollectionBidValue" sortable header="TBV" headerTooltip="Total Bid Value"></Column>*/}
             <Column field="volumeOneDay" sortable header="1D Vol" headerTooltip="1 Day Volume"/>
+            <Column field="underwaterTokens" sortable header="# Underwater" headerTooltip="# Tokens Purchased Below Current Floor"/>
+            <Column field="underwaterPercentage" sortable header="% Underwater" headerTooltip="% Tokens Purchased Below CUrrent Floor"/>
         </DataTable>
     );
 }
