@@ -1,7 +1,6 @@
 import React from 'react';
 import {DataTable} from 'primereact/datatable';
 import {Column} from "primereact/column";
-import styles from './CollectionTable.module.css'
 
 
 const CollectionTable = (props) => {
@@ -16,20 +15,26 @@ const CollectionTable = (props) => {
         <DataTable value={props.collectionData}
                    sortField="volumeFifteenMinutes"
                    sortOrder={-1}
+                   filter={true}
+                   filters={props.filters}
+                   onFilter={props.handleFilter}
                    stripedRows='true'
                    theme='md-dark-indigo'
                    resizableColumns
                    columnResizeMode="fit"
                    style={{fontSize: '12px', fontWeight: 'bold'}}
         >
-            <Column field="imageUrl" header="Logo" body={imageBodyTemplate}></Column>
-            <Column field="name" sortable header="Name" body={nameLinkTemplate}></Column>
-            <Column field="volumeFifteenMinutes" sortable header="15mV" headerTooltip="15 Minute Volume"></Column>
-            <Column field="floorPrice" sortable header="Floor"></Column>
-            <Column field="floorPriceOneDay" sortable header="1D Floor"></Column>
-            <Column field="bestCollectionBid" sortable header="Bid"></Column>
-            <Column field="totalCollectionBidValue" sortable header="TBV" headerTooltip="Total Bid Value"></Column>
-            <Column field="volumeOneDay" sortable header="1DV" headerTooltip="1 Day Volume"></Column>
+            <Column field="imageUrl" header="Logo" body={imageBodyTemplate}/>
+            <Column field="name" sortable header="Name" body={nameLinkTemplate}/>
+            <Column field="volumeFifteenMinutes" sortable header="15m Vol" headerTooltip="15 Minute Volume"/>
+            <Column field="volumeFifteenMinutesAgo" sortable header="Past 15m Vol"
+                    headerTooltip="15 min volume, 15 minutes ago"/>
+            <Column field="floorPrice" sortable header="Floor"/>
+            <Column field="floorFifteenMinutes" sortable header="15m Floor" headerTooltip="15 Minute Floor"/>
+            <Column field="floorPriceOneDay" sortable header="1D Floor"/>
+            {/*<Column field="bestCollectionBid" sortable header="Bid"></Column>*/}
+            {/*<Column field="totalCollectionBidValue" sortable header="TBV" headerTooltip="Total Bid Value"></Column>*/}
+            <Column field="volumeOneDay" sortable header="1D Vol" headerTooltip="1 Day Volume"/>
         </DataTable>
     );
 }
