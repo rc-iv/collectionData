@@ -22,7 +22,7 @@ const CollectionTable = (props) => {
                    theme='md-dark-indigo'
                    resizableColumns
                    columnResizeMode="fit"
-                   style={{fontSize: '15px', fontWeight: 'bold'}}
+                   style={{fontSize: '14px', fontWeight: 'bold'}}
         >
             <Column field="imageUrl" header="Logo" body={imageBodyTemplate}/>
             <Column field="name" sortable header="Name" body={nameLinkTemplate}/>
@@ -36,7 +36,7 @@ const CollectionTable = (props) => {
             {/*<Column field="totalCollectionBidValue" sortable header="TBV" headerTooltip="Total Bid Value"></Column>*/}
             <Column field="volumeOneDay" sortable header="1D Vol" headerTooltip="1 Day Volume"/>
             <Column field="underwaterTokens" sortable header="# Under" headerTooltip="# Tokens Purchased Below Current Floor"/>
-            <Column field="underwaterPercentage" sortable header="% Under" headerTooltip="% Tokens Purchased Below CUrrent Floor"/>
+            <Column field="underwaterPercentage" sortable header="% Under" headerTooltip="% Tokens Purchased Below Current Floor"/>
             <Column field="eliteHolders" sortable header="EliteHolders" headerTooltip="# of owners who own a number of elite tokens. (# of elite tokens held by those owners)"/>
             <Column field="eliteTokens" sortable header="EliteTokens" headerTooltip="# tokens from this collection held by elite owners. (elite owners own a number of assets across fidenza, ringers, bayc, punks, rarepass, and similar)"/>
         </DataTable>
