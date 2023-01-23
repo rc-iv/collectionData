@@ -22,12 +22,12 @@ const CollectionTable = (props) => {
                    theme='md-dark-indigo'
                    resizableColumns
                    columnResizeMode="fit"
-                   style={{fontSize: '12px', fontWeight: 'bold'}}
+                   style={{fontSize: '15px', fontWeight: 'bold'}}
         >
             <Column field="imageUrl" header="Logo" body={imageBodyTemplate}/>
             <Column field="name" sortable header="Name" body={nameLinkTemplate}/>
-            <Column field="volumeFifteenMinutes" sortable header="15m Vol" headerTooltip="15 Minute Volume"/>
-            <Column field="volumeFifteenMinutesAgo" sortable header="Past 15m Vol"
+            <Column field="volumeFifteenMinutes" sortable header="15m V" headerTooltip="15 Minute Volume"/>
+            <Column field="volumeFifteenMinutesAgo" sortable header="Past 15m V"
                     headerTooltip="15 min volume, 15 minutes ago"/>
             <Column field="floorPrice" sortable header="Floor"/>
             <Column field="floorFifteenMinutes" sortable header="15m Floor" headerTooltip="15 Minute Floor"/>
@@ -35,8 +35,10 @@ const CollectionTable = (props) => {
             {/*<Column field="bestCollectionBid" sortable header="Bid"></Column>*/}
             {/*<Column field="totalCollectionBidValue" sortable header="TBV" headerTooltip="Total Bid Value"></Column>*/}
             <Column field="volumeOneDay" sortable header="1D Vol" headerTooltip="1 Day Volume"/>
-            <Column field="underwaterTokens" sortable header="# Underwater" headerTooltip="# Tokens Purchased Below Current Floor"/>
-            <Column field="underwaterPercentage" sortable header="% Underwater" headerTooltip="% Tokens Purchased Below CUrrent Floor"/>
+            <Column field="underwaterTokens" sortable header="# Under" headerTooltip="# Tokens Purchased Below Current Floor"/>
+            <Column field="underwaterPercentage" sortable header="% Under" headerTooltip="% Tokens Purchased Below CUrrent Floor"/>
+            <Column field="eliteHolders" sortable header="EliteHolders" headerTooltip="# of owners who own a number of elite tokens. (ringers, fidenza, punks, proof, bayc etc)"/>
+            <Column field="eliteTokens" sortable header="EliteTokens" headerTooltip="# elite tokens owned by elite holders. (ringers, fidenza, punks, proof, bayc etc) "/>
         </DataTable>
     );
 }
